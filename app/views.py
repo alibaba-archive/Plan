@@ -22,5 +22,5 @@ def month(request):
 		month = tl.duedate.month
 		data = group_by_month.get(month)
 		data.append(tl)
-	print group_by_month
+
 	return render_to_response('index.jade', { "tasklists": group_by_month })
