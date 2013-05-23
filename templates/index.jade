@@ -1,0 +1,13 @@
+!!!5
+html
+	head
+		title Plan - teambition
+	body
+		for month, tls in tasklists.iteritems
+			ul
+				if tls|length > 0
+					h1 {{month}}月
+						for tl in tls
+							h3 {{tl.get_category_display}}
+								for t in tl.tasks.all
+									li {{t.content}}
