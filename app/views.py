@@ -3,9 +3,9 @@
 from datetime import date
 from .models import *
 from django.shortcuts import render_to_response
+from django.contrib.auth.decorators import login_required
 
-from django.db import connection
-
+@login_required
 def month(request):
 
 	# current year
