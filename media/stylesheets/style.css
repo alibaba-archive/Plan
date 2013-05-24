@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(230, 230, 230);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  min-width: 4000px;
+}
+
+.time-line {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.year-header {
+  padding-top: 30px;
+  padding-left: 70px;
+  width: 100px;
+}
+
+.year-title {
+  position: absolute;
+  left: 45px;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.year-time-line {
+  margin-top: 30px;
+}
+
+.month {
+  width: 350px;
+}
+
+.month-title {
+  padding-left: 5px;
+  font-size: 17px;
+}
+
+.month-time-line::before {
+  position: absolute;
+  left: -35px;
+  top: -8px;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  content: '';
+}
+
+.plan-card {
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.plans-list {
+  padding-left: 15px;
+}
+
+.plan {
+  line-height: 24px;
+}

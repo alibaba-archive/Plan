@@ -1,0 +1,12 @@
+{
+  "name": "teambition-plan",
+  "version": "0.0.1",
+  "dependencies": {
+    "UI": "git@github.com:teambition/UI.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}

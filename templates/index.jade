@@ -1,13 +1,24 @@
 !!!5
 html
-	head
-		title Plan - teambition
-	body
-		for month, tls in tasklists.iteritems
-			ul
-				if tls|length > 0
-					h1 {{month}}月
-						for tl in tls
-							h3 {{tl.get_category_display}}
-								for t in tl.tasks.all
-									li {{t.content}}
+  head
+    title Teambition · Plan
+    link(href='/site_media/components/UI/docs/assets/css/teambition-ui.css', rel='stylesheet')
+    link(href='/site_media/stylesheets/style.css', rel='stylesheet')
+    link(href='/site_media/images/favicon.ico', rel='shortcut icon')
+  body
+    header.year-header.pull-left
+      h1.year-title 2013
+      hr.year-time-line.time-line
+    for month, tls in tasklists.iteritems
+      if tls|length > 0
+        section.month.pull-left
+          h2.month-title {{month}}月
+          hr.month-time-line.time-line
+          for tl in tls
+            article.plan-card.card
+              header.plan-card-header.card-header
+                p.plan-card-title.card-description: strong {{tl.get_category_display}}
+              div.plan-card-content.card-content
+                ul.plans-list
+                  for t in tl.tasks.all
+                    li.plan {{t.content}}
