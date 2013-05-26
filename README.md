@@ -1,12 +1,12 @@
 Teambition · Plan
 ====
 
-Install Components before start:
+Setup before start:
 ```
-cd media && bower install
+sh setup.sh
 ```
 
-Startup by:
+Start up by:
 ```
 python manage.py runserver [port]
 ```
