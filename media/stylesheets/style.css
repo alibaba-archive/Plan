@@ -2,7 +2,6 @@ body {
   background-color: rgb(230, 230, 230);
   overflow-x: scroll;
   overflow-y: hidden;
-  min-width: 4000px;
 }
 
 .time-line {
