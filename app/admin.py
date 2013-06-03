@@ -12,4 +12,8 @@ class TLAdmin(admin.ModelAdmin):
 	list_display = ('category','duedate', 'created_at')
 
 
+class ProjectAdmin(admin.ModelAdmin):
+    list_display = ('name', 'created_at')
+
 admin.site.register(Tasklist, TLAdmin)
+admin.site.register(Project, ProjectAdmin)

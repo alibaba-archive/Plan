@@ -14,6 +14,7 @@ urlpatterns = patterns('',
 	(r'^$', 'app.views.month'),
 	(r'^login/?', 'django.contrib.auth.views.login', {'template_name': 'login.jade'}),
 	(r'^logout/?', 'django.contrib.auth.views.logout', {'next_page': '/login'}),
+    (r'^project/(?P<project_attr>\w+)/?', 'app.views.lists'),
 )
 handler404 = 'page.views.custom_404_view'
 handler500 = 'page.views.custom_500_view'
